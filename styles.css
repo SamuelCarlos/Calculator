@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: "smooth";
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  color: #d8c492;
+}
+
+html body {
+  background-color: #231f20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#calc-body {
+  padding: 5px;
+  width: 250px;
+  max-width: 250px;
+  border: 4px solid #ff715b;
+  border-radius: 5px;
+  background-color: rgba(255, 113, 91, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+#calc-screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
+  height: 30px;
+}
+
+#calc-keyboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calc-keyboard table {
+  width: 100%;
+}
+
+#calc-keyboard table tr td {
+  width: 30px;
+  max-width: 30px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+#calc-keyboard table tr td button {
+  background-color: rgba(255, 113, 91, 0.7);
+  border: none;
+  width: 100%;
+  height: 30px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+}
+
+#calc-keyboard table tr td.dark button {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #d8c492;
+}
+
+#calc-keyboard table tr td button:hover {
+  background-color: rgba(255, 113, 91, 0.3);
+  cursor: pointer;
+  color: #d8c492;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #d8c492;
+  margin-top: 40px;
+}
